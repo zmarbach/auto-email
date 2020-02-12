@@ -15,7 +15,9 @@ public class DayService {
             LocalDate date = LocalDate.of(2020,2, i);
             LocalDateTime dateTime = LocalDateTime.of(date, LocalTime.MIDNIGHT);
             Day day = new Day("2/" + i, dateTime);
-            if(i <= 13){
+            //set this cuz I started late so first 10 days wont be reported
+            //TODO - need to update number below if APP stops at any time (based on which days have already been reported to Dawn)
+            if(i <= 11){
                 day.setEmailSent(true);
             }
             days.add(day);

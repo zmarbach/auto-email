@@ -16,7 +16,7 @@ public class App {
             dayService.generateAndReturnDaysInFeb();
 
             //TODO - handle issue with NOT sending emails on Sat/Sun and send those results on Monday
-            while(new Date().getTime() <= feb29Time){
+            while(new Date().getTime() <= feb29Time && emailSender.getNumOfEmailsSentToDawn() < 50){
                 for (Day day : dayService.getDays()) {
                     LocalDateTime now = LocalDateTime.now();
                     if(shouldSendEmail(now, day)){
@@ -29,15 +29,11 @@ public class App {
         public static boolean shouldSendEmail(LocalDateTime now, Day day){
             //return true IF...
             // currentTime is after midnight of given day
-            // AND wait 9 hrs to send so send at 9am
+            // AND it is 9am
             // AND email has not already been sent for that day
             return now.isAfter(day.getLocalDateTime().plusDays(1))
-                    && !day.isEmailSent();
-
-            //TODO - need to toggle this back on for the 9 hour delay???
-
-//                && now.isAfter(now.plusHours(9));
-
+                    && !day.isEmailSent()
+                    && now.getHour() == 9;
         }
     }
 

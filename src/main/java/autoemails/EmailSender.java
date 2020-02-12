@@ -7,6 +7,7 @@ import java.util.Properties;
 public class EmailSender {
     private EmailAuthenticator emailAuthenticator= new EmailAuthenticator();
     private StepsFromFileHandler stepsFromFileHandler = new StepsFromFileHandler();
+    private int numOfEmailsSentToDawn = 0;
 
     public void execute(Day day) {
         Properties props = new Properties();
@@ -21,6 +22,7 @@ public class EmailSender {
         try {
             stepsFromFileHandler.assignStepsToDay(day);
 
+            //send error email to me if steps = 0, that means I forgot to update the SS
             if(day.getStepCount() == 0){
                 Message messageIfZeroSteps = new MimeMessage(session);
                 messageIfZeroSteps.setFrom(new InternetAddress(emailAuthenticator.getUsername()));
@@ -31,16 +33,18 @@ public class EmailSender {
                 Transport.send(messageIfZeroSteps);
             }
 
+            //send email to Dawn and cc my Improving email if all is good
             else{
                 Message message = new MimeMessage(session);
                 message.setFrom(new InternetAddress(emailAuthenticator.getUsername()));
-                //TODO - replace TO field with DAWN
-                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("zachary.marbach@improving.com"));
-                message.setRecipients(Message.RecipientType.CC, InternetAddress.parse("zacharymarbach@gmail.com"));
+                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Dawn.Dearstone@improving.com"));
+                message.setRecipients(Message.RecipientType.CC, InternetAddress.parse("zachary.marbach@improving.com"));
                 message.setSubject("Get Up And Move!");
                 message.setText(day.getDaySlashMonth() + " - " + day.getStepCount() + " steps");
 
                 Transport.send(message);
+                numOfEmailsSentToDawn++;
+                System.out.println("Total emails sent to Dawn = " + numOfEmailsSentToDawn);
 
                 //must toggle emailSent so wont send duplicate emails
                 day.setEmailSent(true);
@@ -49,5 +53,9 @@ public class EmailSender {
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public int getNumOfEmailsSentToDawn() {
+        return numOfEmailsSentToDawn;
     }
 }
