@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dcdac73-8529-46ba-93aa-05bb38eebf12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/autoemails/DayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/autoemails/DayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/autoemails/StepsFromFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/autoemails/StepsFromFileHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -128,22 +132,22 @@
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="501" y="223" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1581492788790" />
-    <state width="1609" height="294" key="GridCell.Tab.0.bottom" timestamp="1581520437158">
+    <state width="1609" height="294" key="GridCell.Tab.0.bottom" timestamp="1581549258312">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1581520437158" />
-    <state width="1609" height="294" key="GridCell.Tab.0.center" timestamp="1581520437158">
+    <state width="1609" height="294" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1581549258312" />
+    <state width="1609" height="294" key="GridCell.Tab.0.center" timestamp="1581549258312">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1581520437158" />
-    <state width="1609" height="294" key="GridCell.Tab.0.left" timestamp="1581520437158">
+    <state width="1609" height="294" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1581549258312" />
+    <state width="1609" height="294" key="GridCell.Tab.0.left" timestamp="1581549258311">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1581520437158" />
-    <state width="1609" height="294" key="GridCell.Tab.0.right" timestamp="1581520437158">
+    <state width="1609" height="294" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1581549258311" />
+    <state width="1609" height="294" key="GridCell.Tab.0.right" timestamp="1581549258312">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1581520437158" />
+    <state width="1609" height="294" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1581549258312" />
     <state width="1609" height="262" key="GridCell.Tab.1.bottom" timestamp="1581501241370">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
@@ -164,10 +168,10 @@
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="251" y="108" key="Maven.ArtifactSearchDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1581495680022" />
-    <state x="185" y="6" key="SettingsEditor" timestamp="1581482165366">
+    <state x="185" y="6" key="SettingsEditor" timestamp="1581549207261">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state x="185" y="6" key="SettingsEditor/0.0.1664.1069@0.0.1664.1069" timestamp="1581482165366" />
+    <state x="185" y="6" key="SettingsEditor/0.0.1664.1069@0.0.1664.1069" timestamp="1581549207261" />
     <state x="93" y="93" width="1479" height="884" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1581501873879">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>

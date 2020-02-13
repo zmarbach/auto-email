@@ -9,7 +9,7 @@ public class StepsFromFileHandler {
     private String filePath = "/Users/zacha/OneDrive/Desktop/steps.csv";
 
     public void assignStepsToDay(Day day) {
-        List<List<String>> records = new ArrayList<>();
+        List<List<String>> records = new ArrayList<List<String>>();
         try (Scanner scanner = new Scanner(new File(filePath))) {
             while (scanner.hasNextLine()) {
                 records.add(getRecordFromLine(scanner.nextLine()));

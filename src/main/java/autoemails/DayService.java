@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import java.util.*;
 
 public class DayService {
-    private List<Day> days = new ArrayList<>();
+    private List<Day> days = new ArrayList<Day>();
 
     public void generateAndReturnDaysInFeb(){
         //create day for each month in feb and add to set of days
