@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dcdac73-8529-46ba-93aa-05bb38eebf12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/autoemails/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/autoemails/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/autoemails/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/autoemails/EmailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +47,9 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\source\auto-email" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="autoemails" />
     </key>
