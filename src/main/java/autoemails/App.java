@@ -31,9 +31,9 @@ public class App {
             // currentTime is after midnight of given day
             // AND it is 9am
             // AND email has not already been sent for that day
-            return now.isAfter(day.getLocalDateTime().plusDays(1))
-                    && !day.isEmailSent()
-                    && now.getHour() == 9;
+            return now.isAfter(day.getLocalDateTime().plusDays(1));
+//                    && !day.isEmailSent()
+//                    && now.getHour() == 9;
         }
     }
 

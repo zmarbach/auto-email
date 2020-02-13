@@ -37,7 +37,7 @@ public class EmailSender {
             else{
                 Message message = new MimeMessage(session);
                 message.setFrom(new InternetAddress(emailAuthenticator.getUsername()));
-                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Dawn.Dearstone@improving.com"));
+//                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Dawn.Dearstone@improving.com"));
                 message.setRecipients(Message.RecipientType.CC, InternetAddress.parse("zachary.marbach@improving.com"));
                 message.setSubject("Get Up And Move!");
                 message.setText(day.getDaySlashMonth() + " - " + day.getStepCount() + " steps");
