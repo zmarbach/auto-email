@@ -1,1 +1,1 @@
-web: java -jar C:\source\auto-email\target\classes\autoemails
+web: java -jar C:/source/auto-email/target/classes/autoemails/App.jar
