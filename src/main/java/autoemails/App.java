@@ -23,7 +23,7 @@ public class App {
                     LocalDateTime now = LocalDateTime.now();
 
                     //only check and take action at 9am every day in Feb
-                    if(now.getHour() == 10 && now.getMinute() == 1 && now.getSecond() == 1){
+                    if(now.getHour() == 9 && now.getMinute() == 1 && now.getSecond() == 1){
 
                         //read file and assign most current values
                         stepsFromFileHandler.assignFileValuesToDay(day);
@@ -32,7 +32,6 @@ public class App {
                             emailSender.execute(day);
                         }
                     }
-
                 }
             }
         }
@@ -43,8 +42,7 @@ public class App {
             // AND it is 9am
             // AND email has not already been sent for that day
             return  now.isAfter(day.getLocalDateTime().plusDays(1))
-                    && !day.isEmailSent()
-                    && now.getHour() == 9;
+                    && !day.isEmailSent();
         }
     }
 
