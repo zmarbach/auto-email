@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dcdac73-8529-46ba-93aa-05bb38eebf12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/autoemails/DayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/autoemails/DayService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +42,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
@@ -118,6 +118,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="325" y="111" key="#Project_Structure" timestamp="1581689235395">
+      <screen x="0" y="0" width="1664" height="1069" />
+    </state>
+    <state x="325" y="111" key="#Project_Structure/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581689235394" />
     <state x="551" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581636356877">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
@@ -139,28 +143,28 @@
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="501" y="223" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1581492788790" />
-    <state width="1609" height="294" key="GridCell.Tab.0.bottom" timestamp="1581688956595">
+    <state width="1609" height="294" key="GridCell.Tab.0.bottom" timestamp="1581689158002">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.bottom/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581688956595" />
+    <state width="1609" height="294" key="GridCell.Tab.0.bottom/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581689158002" />
     <state width="1865" height="294" key="GridCell.Tab.0.bottom/0.0.1664.1069/570.-1080.1920.1040@570.-1080.1920.1040" timestamp="1581637732872" />
     <state width="1609" height="294" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1581654158499" />
-    <state width="1609" height="294" key="GridCell.Tab.0.center" timestamp="1581688956594">
+    <state width="1609" height="294" key="GridCell.Tab.0.center" timestamp="1581689158002">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.center/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581688956594" />
+    <state width="1609" height="294" key="GridCell.Tab.0.center/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581689158002" />
     <state width="1865" height="294" key="GridCell.Tab.0.center/0.0.1664.1069/570.-1080.1920.1040@570.-1080.1920.1040" timestamp="1581637732871" />
     <state width="1609" height="294" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1581654158499" />
-    <state width="1609" height="294" key="GridCell.Tab.0.left" timestamp="1581688956594">
+    <state width="1609" height="294" key="GridCell.Tab.0.left" timestamp="1581689158000">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.left/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581688956594" />
+    <state width="1609" height="294" key="GridCell.Tab.0.left/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581689158000" />
     <state width="1865" height="294" key="GridCell.Tab.0.left/0.0.1664.1069/570.-1080.1920.1040@570.-1080.1920.1040" timestamp="1581637732871" />
     <state width="1609" height="294" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1581654158498" />
-    <state width="1609" height="294" key="GridCell.Tab.0.right" timestamp="1581688956594">
+    <state width="1609" height="294" key="GridCell.Tab.0.right" timestamp="1581689158002">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1609" height="294" key="GridCell.Tab.0.right/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581688956594" />
+    <state width="1609" height="294" key="GridCell.Tab.0.right/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581689158002" />
     <state width="1865" height="294" key="GridCell.Tab.0.right/0.0.1664.1069/570.-1080.1920.1040@570.-1080.1920.1040" timestamp="1581637732872" />
     <state width="1609" height="294" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1581654158499" />
     <state width="1609" height="262" key="GridCell.Tab.1.bottom" timestamp="1581501241370">
