@@ -20,10 +20,8 @@ public class EmailSender {
         session.setDebug(true);
 
         try {
-            stepsFromFileHandler.assignStepsToDay(day);
-
             //send error email to me if steps = 0, that means I forgot to update the SS
-            if(day.getStepCount() == 0){
+            if(day.getStepCount() == "0"){
                 Message messageIfZeroSteps = new MimeMessage(session);
                 messageIfZeroSteps.setFrom(new InternetAddress(emailAuthenticator.getUsername()));
                 messageIfZeroSteps.setRecipients(Message.RecipientType.TO, InternetAddress.parse("zachary.marbach@improving.com"));
@@ -37,7 +35,7 @@ public class EmailSender {
             else{
                 Message message = new MimeMessage(session);
                 message.setFrom(new InternetAddress(emailAuthenticator.getUsername()));
-                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Dawn.Dearstone@improving.com"));
+//                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("Dawn.Dearstone@improving.com"));
                 message.setRecipients(Message.RecipientType.CC, InternetAddress.parse("zachary.marbach@improving.com"));
                 message.setSubject("Get Up And Move!");
                 message.setText(day.getDaySlashMonth() + " - " + day.getStepCount() + " steps");

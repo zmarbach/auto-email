@@ -9,8 +9,10 @@ public class App {
     public static void main(String[] args) {
         DayService dayService = new DayService();
         EmailSender emailSender = new EmailSender();
+        StepsFromFileHandler stepsFromFileHandler = new StepsFromFileHandler();
 
-            Date feb29 = new Date(2020, Calendar.FEBRUARY, 29);
+
+        Date feb29 = new Date(2020, Calendar.FEBRUARY, 29);
             long feb29Time = feb29.getTime();
 
             dayService.generateAndReturnDaysInFeb();
@@ -19,9 +21,18 @@ public class App {
             while(new Date().getTime() <= feb29Time && emailSender.getNumOfEmailsSentToDawn() < 50){
                 for (Day day : dayService.getDays()) {
                     LocalDateTime now = LocalDateTime.now();
-                    if(shouldSendEmail(now, day)){
-                        emailSender.execute(day);
+
+                    //only check and take action at 9am every day in Feb
+                    if(now.getHour() == 10 && now.getMinute() == 1 && now.getSecond() == 1){
+
+                        //read file and assign most current values
+                        stepsFromFileHandler.assignFileValuesToDay(day);
+
+                        if(shouldSendEmail(now, day)){
+                            emailSender.execute(day);
+                        }
                     }
+
                 }
             }
         }
@@ -31,7 +42,7 @@ public class App {
             // currentTime is after midnight of given day
             // AND it is 9am
             // AND email has not already been sent for that day
-            return now.isAfter(day.getLocalDateTime().plusDays(1))
+            return  now.isAfter(day.getLocalDateTime().plusDays(1))
                     && !day.isEmailSent()
                     && now.getHour() == 9;
         }

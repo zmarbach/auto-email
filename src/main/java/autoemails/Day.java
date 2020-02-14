@@ -7,7 +7,7 @@ public class Day {
     private String daySlashMonth;
     private LocalDateTime localDateTime;
     private boolean emailSent;
-    private int stepCount;
+    private String stepCount;
 
     public Day(String daySlashMonth, LocalDateTime localDateTime) {
         this.daySlashMonth = daySlashMonth;
@@ -30,11 +30,11 @@ public class Day {
         this.emailSent = emailSent;
     }
 
-    public int getStepCount() {
+    public String getStepCount() {
         return stepCount;
     }
 
-    public void setStepCount(int stepCount) {
+    public void setStepCount(String stepCount) {
         this.stepCount = stepCount;
     }
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class StepsFromFileHandler {
     private String filePath = "/Users/zacha/OneDrive/Desktop/steps.csv";
 
-    public void assignStepsToDay(Day day) {
+    public void assignFileValuesToDay(Day day) {
         List<List<String>> records = new ArrayList<List<String>>();
         try (Scanner scanner = new Scanner(new File(filePath))) {
             while (scanner.hasNextLine()) {
@@ -16,9 +16,11 @@ public class StepsFromFileHandler {
             }
 
             for(List<String> record : records){
+                //if dates match
                 if(record.get(0).equalsIgnoreCase(day.getDaySlashMonth())){
-                    //update stepcount
-                    day.setStepCount(Integer.parseInt(record.get(1)));
+                    //update step count and emailSent boolean
+                    day.setStepCount((record.get(1)));
+                    day.setEmailSent(Boolean.parseBoolean(record.get(2)));
                 }
             }
         }
@@ -27,9 +29,8 @@ public class StepsFromFileHandler {
         }
     }
 
-
     private List<String> getRecordFromLine(String line) {
-        List<String> values = new ArrayList<>();
+        List<String> values = new ArrayList<String>();
         try (Scanner rowScanner = new Scanner(line)) {
             rowScanner.useDelimiter(",");
             while (rowScanner.hasNext()) {
