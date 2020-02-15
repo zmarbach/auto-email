@@ -20,6 +20,7 @@ public class StepsFromFileHandler {
                 if(record.get(0).equalsIgnoreCase(day.getDaySlashMonth())){
                     //update step count and emailSent boolean
                     day.setStepCount((record.get(1)));
+                    //TODO - this doesnt work...change if want to use...back to setting true manually in Day Service instead of trying to use the file. Not efficient
                     day.setEmailSent(Boolean.parseBoolean(record.get(2)));
                 }
             }
